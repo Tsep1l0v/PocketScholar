@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE407BBB2A0875DC00A2DE13 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE407BBA2A0875DC00A2DE13 /* SearchUserView.swift */; };
+		FE5349562A06F01E00F50493 /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5349552A06F01E00F50493 /* CreateNewPost.swift */; };
+		FE5349582A06F06700F50493 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5349572A06F06700F50493 /* Post.swift */; };
+		FE53495A2A07007500F50493 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5349592A07007500F50493 /* PostsView.swift */; };
+		FE53495C2A072B2D00F50493 /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53495B2A072B2D00F50493 /* ReusablePostsView.swift */; };
+		FE53495E2A0730D300F50493 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE53495D2A0730D300F50493 /* PostCardView.swift */; };
+		FEEDEF7F2A064C5600CE7794 /* PocketScholarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEF7E2A064C5600CE7794 /* PocketScholarApp.swift */; };
+		FEEDEF812A064C5600CE7794 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEF802A064C5600CE7794 /* ContentView.swift */; };
+		FEEDEF832A064C5800CE7794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEDEF822A064C5800CE7794 /* Assets.xcassets */; };
+		FEEDEF862A064C5800CE7794 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEDEF852A064C5800CE7794 /* Preview Assets.xcassets */; };
+		FEEDEF902A064C5900CE7794 /* PocketScholarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEF8F2A064C5900CE7794 /* PocketScholarTests.swift */; };
+		FEEDEF9A2A064C5900CE7794 /* PocketScholarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEF992A064C5900CE7794 /* PocketScholarUITests.swift */; };
+		FEEDEF9C2A064C5900CE7794 /* PocketScholarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEF9B2A064C5900CE7794 /* PocketScholarUITestsLaunchTests.swift */; };
+		FEEDEFAB2A064D3200CE7794 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDEFAA2A064D3200CE7794 /* FirebaseAuth */; };
+		FEEDEFAD2A064D3200CE7794 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDEFAC2A064D3200CE7794 /* FirebaseFirestore */; };
+		FEEDEFAF2A064D3200CE7794 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDEFAE2A064D3200CE7794 /* FirebaseFirestoreSwift */; };
+		FEEDEFB12A064D3200CE7794 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDEFB02A064D3200CE7794 /* FirebaseStorage */; };
+		FEEDEFB42A0657D000CE7794 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FEEDEFB32A0657D000CE7794 /* SDWebImageSwiftUI */; };
+		FEEDEFBA2A065B4500CE7794 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFB92A065B4500CE7794 /* LoginView.swift */; };
+		FEEDEFBC2A066DF600CE7794 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFBB2A066DF600CE7794 /* User.swift */; };
+		FEEDEFBE2A0674C500CE7794 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEDEFBD2A0674C400CE7794 /* GoogleService-Info.plist */; };
+		FEEDEFC02A06772B00CE7794 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFBF2A06772B00CE7794 /* LoadingView.swift */; };
+		FEEDEFC42A06BDB800CE7794 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFC32A06BDB800CE7794 /* RegisterView.swift */; };
+		FEEDEFC72A06BE6C00CE7794 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFC62A06BE6C00CE7794 /* View+Extensions.swift */; };
+		FEEDEFC92A06BEE800CE7794 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFC82A06BEE800CE7794 /* MainView.swift */; };
+		FEEDEFCB2A06C2B000CE7794 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFCA2A06C2B000CE7794 /* CustomCorner.swift */; };
+		FEEDEFCD2A06C61C00CE7794 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFCC2A06C61C00CE7794 /* ProfileView.swift */; };
+		FEEDEFCF2A06CEB600CE7794 /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDEFCE2A06CEB600CE7794 /* ReusableProfileContent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEEDEF8C2A064C5900CE7794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDEF732A064C5600CE7794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEEDEF7A2A064C5600CE7794;
+			remoteInfo = PocketScholar;
+		};
+		FEEDEF962A064C5900CE7794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEEDEF732A064C5600CE7794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEEDEF7A2A064C5600CE7794;
+			remoteInfo = PocketScholar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE407BBA2A0875DC00A2DE13 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
+		FE5349552A06F01E00F50493 /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
+		FE5349572A06F06700F50493 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FE5349592A07007500F50493 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		FE53495B2A072B2D00F50493 /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
+		FE53495D2A0730D300F50493 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
+		FEEDEF7B2A064C5600CE7794 /* PocketScholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketScholar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEDEF7E2A064C5600CE7794 /* PocketScholarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketScholarApp.swift; sourceTree = "<group>"; };
+		FEEDEF802A064C5600CE7794 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FEEDEF822A064C5800CE7794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEEDEF852A064C5800CE7794 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEEDEF8B2A064C5900CE7794 /* PocketScholarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketScholarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEDEF8F2A064C5900CE7794 /* PocketScholarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketScholarTests.swift; sourceTree = "<group>"; };
+		FEEDEF952A064C5900CE7794 /* PocketScholarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketScholarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEDEF992A064C5900CE7794 /* PocketScholarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketScholarUITests.swift; sourceTree = "<group>"; };
+		FEEDEF9B2A064C5900CE7794 /* PocketScholarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketScholarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEEDEFA82A064C7100CE7794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FEEDEFB92A065B4500CE7794 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FEEDEFBB2A066DF600CE7794 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEEDEFBD2A0674C400CE7794 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEEDEFBF2A06772B00CE7794 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FEEDEFC32A06BDB800CE7794 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FEEDEFC62A06BE6C00CE7794 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		FEEDEFC82A06BEE800CE7794 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FEEDEFCA2A06C2B000CE7794 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		FEEDEFCC2A06C61C00CE7794 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FEEDEFCE2A06CEB600CE7794 /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEEDEF782A064C5600CE7794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEDEFB42A0657D000CE7794 /* SDWebImageSwiftUI in Frameworks */,
+				FEEDEFAB2A064D3200CE7794 /* FirebaseAuth in Frameworks */,
+				FEEDEFB12A064D3200CE7794 /* FirebaseStorage in Frameworks */,
+				FEEDEFAD2A064D3200CE7794 /* FirebaseFirestore in Frameworks */,
+				FEEDEFAF2A064D3200CE7794 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF882A064C5900CE7794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF922A064C5900CE7794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE407BB82A0873AF00A2DE13 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				FE5349592A07007500F50493 /* PostsView.swift */,
+				FE53495D2A0730D300F50493 /* PostCardView.swift */,
+				FE53495B2A072B2D00F50493 /* ReusablePostsView.swift */,
+			);
+			path = PostView;
+			sourceTree = "<group>";
+		};
+		FE407BB92A0873E400A2DE13 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFCC2A06C61C00CE7794 /* ProfileView.swift */,
+				FEEDEFCE2A06CEB600CE7794 /* ReusableProfileContent.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		FEEDEF722A064C5600CE7794 = {
+			isa = PBXGroup;
+			children = (
+				FEEDEF7D2A064C5600CE7794 /* PocketScholar */,
+				FEEDEF8E2A064C5900CE7794 /* PocketScholarTests */,
+				FEEDEF982A064C5900CE7794 /* PocketScholarUITests */,
+				FEEDEF7C2A064C5600CE7794 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEEDEF7C2A064C5600CE7794 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEF7B2A064C5600CE7794 /* PocketScholar.app */,
+				FEEDEF8B2A064C5900CE7794 /* PocketScholarTests.xctest */,
+				FEEDEF952A064C5900CE7794 /* PocketScholarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEEDEF7D2A064C5600CE7794 /* PocketScholar */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFBD2A0674C400CE7794 /* GoogleService-Info.plist */,
+				FEEDEFB82A065B2900CE7794 /* Model */,
+				FEEDEFB72A065B1B00CE7794 /* View */,
+				FEEDEFA82A064C7100CE7794 /* Info.plist */,
+				FEEDEF7E2A064C5600CE7794 /* PocketScholarApp.swift */,
+				FEEDEF802A064C5600CE7794 /* ContentView.swift */,
+				FEEDEF822A064C5800CE7794 /* Assets.xcassets */,
+				FEEDEF842A064C5800CE7794 /* Preview Content */,
+			);
+			path = PocketScholar;
+			sourceTree = "<group>";
+		};
+		FEEDEF842A064C5800CE7794 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEF852A064C5800CE7794 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEEDEF8E2A064C5900CE7794 /* PocketScholarTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEF8F2A064C5900CE7794 /* PocketScholarTests.swift */,
+			);
+			path = PocketScholarTests;
+			sourceTree = "<group>";
+		};
+		FEEDEF982A064C5900CE7794 /* PocketScholarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEF992A064C5900CE7794 /* PocketScholarUITests.swift */,
+				FEEDEF9B2A064C5900CE7794 /* PocketScholarUITestsLaunchTests.swift */,
+			);
+			path = PocketScholarUITests;
+			sourceTree = "<group>";
+		};
+		FEEDEFB72A065B1B00CE7794 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE407BB92A0873E400A2DE13 /* ProfileView */,
+				FE407BB82A0873AF00A2DE13 /* PostView */,
+				FEEDEFC52A06BE4700CE7794 /* Helpers */,
+				FEEDEFC22A06BD8D00CE7794 /* MainView */,
+				FEEDEFC12A06BD7F00CE7794 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEEDEFB82A065B2900CE7794 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFBB2A066DF600CE7794 /* User.swift */,
+				FE5349572A06F06700F50493 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEEDEFC12A06BD7F00CE7794 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFB92A065B4500CE7794 /* LoginView.swift */,
+				FEEDEFBF2A06772B00CE7794 /* LoadingView.swift */,
+				FEEDEFC32A06BDB800CE7794 /* RegisterView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FEEDEFC22A06BD8D00CE7794 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFC82A06BEE800CE7794 /* MainView.swift */,
+				FEEDEFCA2A06C2B000CE7794 /* CustomCorner.swift */,
+				FE5349552A06F01E00F50493 /* CreateNewPost.swift */,
+				FE407BBA2A0875DC00A2DE13 /* SearchUserView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FEEDEFC52A06BE4700CE7794 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FEEDEFC62A06BE6C00CE7794 /* View+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEEDEF7A2A064C5600CE7794 /* PocketScholar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEDEF9F2A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholar" */;
+			buildPhases = (
+				FEEDEF772A064C5600CE7794 /* Sources */,
+				FEEDEF782A064C5600CE7794 /* Frameworks */,
+				FEEDEF792A064C5600CE7794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketScholar;
+			packageProductDependencies = (
+				FEEDEFAA2A064D3200CE7794 /* FirebaseAuth */,
+				FEEDEFAC2A064D3200CE7794 /* FirebaseFirestore */,
+				FEEDEFAE2A064D3200CE7794 /* FirebaseFirestoreSwift */,
+				FEEDEFB02A064D3200CE7794 /* FirebaseStorage */,
+				FEEDEFB32A0657D000CE7794 /* SDWebImageSwiftUI */,
+			);
+			productName = PocketScholar;
+			productReference = FEEDEF7B2A064C5600CE7794 /* PocketScholar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEEDEF8A2A064C5900CE7794 /* PocketScholarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEDEFA22A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholarTests" */;
+			buildPhases = (
+				FEEDEF872A064C5900CE7794 /* Sources */,
+				FEEDEF882A064C5900CE7794 /* Frameworks */,
+				FEEDEF892A064C5900CE7794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEDEF8D2A064C5900CE7794 /* PBXTargetDependency */,
+			);
+			name = PocketScholarTests;
+			productName = PocketScholarTests;
+			productReference = FEEDEF8B2A064C5900CE7794 /* PocketScholarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEEDEF942A064C5900CE7794 /* PocketScholarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEDEFA52A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholarUITests" */;
+			buildPhases = (
+				FEEDEF912A064C5900CE7794 /* Sources */,
+				FEEDEF922A064C5900CE7794 /* Frameworks */,
+				FEEDEF932A064C5900CE7794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEEDEF972A064C5900CE7794 /* PBXTargetDependency */,
+			);
+			name = PocketScholarUITests;
+			productName = PocketScholarUITests;
+			productReference = FEEDEF952A064C5900CE7794 /* PocketScholarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEEDEF732A064C5600CE7794 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FEEDEF7A2A064C5600CE7794 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FEEDEF8A2A064C5900CE7794 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FEEDEF7A2A064C5600CE7794;
+					};
+					FEEDEF942A064C5900CE7794 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FEEDEF7A2A064C5600CE7794;
+					};
+				};
+			};
+			buildConfigurationList = FEEDEF762A064C5600CE7794 /* Build configuration list for PBXProject "PocketScholar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEEDEF722A064C5600CE7794;
+			packageReferences = (
+				FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FEEDEFB22A0657D000CE7794 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = FEEDEF7C2A064C5600CE7794 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEEDEF7A2A064C5600CE7794 /* PocketScholar */,
+				FEEDEF8A2A064C5900CE7794 /* PocketScholarTests */,
+				FEEDEF942A064C5900CE7794 /* PocketScholarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEEDEF792A064C5600CE7794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEDEF862A064C5800CE7794 /* Preview Assets.xcassets in Resources */,
+				FEEDEF832A064C5800CE7794 /* Assets.xcassets in Resources */,
+				FEEDEFBE2A0674C500CE7794 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF892A064C5900CE7794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF932A064C5900CE7794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEEDEF772A064C5600CE7794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE53495A2A07007500F50493 /* PostsView.swift in Sources */,
+				FEEDEFBC2A066DF600CE7794 /* User.swift in Sources */,
+				FEEDEFC92A06BEE800CE7794 /* MainView.swift in Sources */,
+				FEEDEFCD2A06C61C00CE7794 /* ProfileView.swift in Sources */,
+				FEEDEFCF2A06CEB600CE7794 /* ReusableProfileContent.swift in Sources */,
+				FE407BBB2A0875DC00A2DE13 /* SearchUserView.swift in Sources */,
+				FE5349582A06F06700F50493 /* Post.swift in Sources */,
+				FEEDEFBA2A065B4500CE7794 /* LoginView.swift in Sources */,
+				FEEDEFCB2A06C2B000CE7794 /* CustomCorner.swift in Sources */,
+				FE53495E2A0730D300F50493 /* PostCardView.swift in Sources */,
+				FEEDEF812A064C5600CE7794 /* ContentView.swift in Sources */,
+				FEEDEFC72A06BE6C00CE7794 /* View+Extensions.swift in Sources */,
+				FE53495C2A072B2D00F50493 /* ReusablePostsView.swift in Sources */,
+				FEEDEFC42A06BDB800CE7794 /* RegisterView.swift in Sources */,
+				FEEDEFC02A06772B00CE7794 /* LoadingView.swift in Sources */,
+				FE5349562A06F01E00F50493 /* CreateNewPost.swift in Sources */,
+				FEEDEF7F2A064C5600CE7794 /* PocketScholarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF872A064C5900CE7794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEDEF902A064C5900CE7794 /* PocketScholarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEDEF912A064C5900CE7794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEDEF9A2A064C5900CE7794 /* PocketScholarUITests.swift in Sources */,
+				FEEDEF9C2A064C5900CE7794 /* PocketScholarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEEDEF8D2A064C5900CE7794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEEDEF7A2A064C5600CE7794 /* PocketScholar */;
+			targetProxy = FEEDEF8C2A064C5900CE7794 /* PBXContainerItemProxy */;
+		};
+		FEEDEF972A064C5900CE7794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEEDEF7A2A064C5600CE7794 /* PocketScholar */;
+			targetProxy = FEEDEF962A064C5900CE7794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FEEDEF9D2A064C5900CE7794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEEDEF9E2A064C5900CE7794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEEDEFA02A064C5900CE7794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketScholar/Preview Content\"";
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketScholar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEEDEFA12A064C5900CE7794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketScholar/Preview Content\"";
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketScholar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEEDEFA32A064C5900CE7794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketScholar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketScholar";
+			};
+			name = Debug;
+		};
+		FEEDEFA42A064C5900CE7794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketScholar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketScholar";
+			};
+			name = Release;
+		};
+		FEEDEFA62A064C5900CE7794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketScholar;
+			};
+			name = Debug;
+		};
+		FEEDEFA72A064C5900CE7794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DV5UPK2J87;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.test1.PocketScholarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketScholar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEEDEF762A064C5600CE7794 /* Build configuration list for PBXProject "PocketScholar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEDEF9D2A064C5900CE7794 /* Debug */,
+				FEEDEF9E2A064C5900CE7794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEDEF9F2A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEDEFA02A064C5900CE7794 /* Debug */,
+				FEEDEFA12A064C5900CE7794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEDEFA22A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEDEFA32A064C5900CE7794 /* Debug */,
+				FEEDEFA42A064C5900CE7794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEDEFA52A064C5900CE7794 /* Build configuration list for PBXNativeTarget "PocketScholarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEDEFA62A064C5900CE7794 /* Debug */,
+				FEEDEFA72A064C5900CE7794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk?ysclid=lhbqx7yr7z789626445";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FEEDEFB22A0657D000CE7794 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI?ysclid=lhbr62ccg919557871";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEEDEFAA2A064D3200CE7794 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FEEDEFAC2A064D3200CE7794 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FEEDEFAE2A064D3200CE7794 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FEEDEFB02A064D3200CE7794 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEDEFA92A064D3200CE7794 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FEEDEFB32A0657D000CE7794 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEEDEFB22A0657D000CE7794 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FEEDEF732A064C5600CE7794 /* Project object */;
+}
